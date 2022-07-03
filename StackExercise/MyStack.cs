@@ -31,4 +31,19 @@ public class MyStack<T>
             return default;
         }
     }
+    
+    public void Print()
+    {
+        if (_myStack.Count > 0)
+        {
+            for (var i = _myStack.Count - 1; i >= 0; i--)
+            {
+                Console.WriteLine(_myStack.ElementAt(i));
+            }
+        }
+        else
+        {
+            Console.WriteLine("Stack is empty!");
+        }
+    }
 }
