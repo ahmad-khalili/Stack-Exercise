@@ -10,4 +10,9 @@ public class MyStack<T>
     {
         _myStack = new List<T>();
     }
+    
+    public void Push(T item)
+    {
+        _myStack.Add(item);
+    }
 }
