@@ -1,1 +1,36 @@
 ﻿using StackExercise;
+
+var intStack = new MyStack<int>();
+intStack.Push(1);
+intStack.Push(5);
+intStack.Push(10);
+intStack.Push(12);
+var intPopResult = intStack.Pop();
+intStack.Peak();
+Console.WriteLine("-------------");
+intStack.Print();
+Console.WriteLine("-------------");
+intStack.Clear();
+intStack.Pop();
+Console.WriteLine("-------------");
+intStack.Print();
+Console.WriteLine("-------------");
+Console.WriteLine($"Result of the Pop: {intPopResult}");
+Console.WriteLine("-------------");
+
+var stringStack = new MyStack<string>();
+stringStack.Push("John");
+stringStack.Push("Jane");
+stringStack.Push("Kennedy");
+stringStack.Push("Sarah");
+var stringPopResult = stringStack.Pop();
+stringStack.Peak();
+Console.WriteLine("-------------");
+stringStack.Print();
+Console.WriteLine("-------------");
+stringStack.Clear();
+stringStack.Print();
+Console.WriteLine("-------------");
+stringStack.Pop();
+Console.WriteLine("-------------");
+Console.WriteLine($"Result of the Pop: {stringPopResult}");
