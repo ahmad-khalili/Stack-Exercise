@@ -46,4 +46,18 @@ public class MyStack<T>
             Console.WriteLine("Stack is empty!");
         }
     }
+    
+    public void Peak()
+    {
+        if (_myStack.Count > 0)
+        {
+            var lastItemIndex = _myStack.Count - 1;
+            var lastItem = _myStack.ElementAt(lastItemIndex);
+            Console.WriteLine(lastItem);
+        }
+        else
+        {
+            Console.WriteLine("Stack is empty!");
+        }
+    }
 }
