@@ -60,4 +60,9 @@ public class MyStack<T>
             Console.WriteLine("Stack is empty!");
         }
     }
+    
+    public void Clear()
+    {
+        _myStack.Clear();
+    }
 }
